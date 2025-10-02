@@ -1,0 +1,6 @@
+@use "../variables/breakpoints"
+
+// Mobile first
+=breakpoint
+  @media (min-width: breakpoints.$breakpoint--large)
+    @content

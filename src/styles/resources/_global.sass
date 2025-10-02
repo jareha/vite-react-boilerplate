@@ -1,0 +1,18 @@
+@use "../mixins/breakpoint"
+@use "../mixins/visually-hidden"
+@use "../variables/breakpoints"
+
+// sass-lint:disable no-important
+
+.global
+  &--mobile-only
+    +breakpoints.breakpoint
+      display: none !important
+
+  &--desktop-only
+    // Generally, we don’t want to use `max-width`; this is an exception
+    @media (max-width: breakpoints.$breakpoint--large + 1)
+      display: none !important
+
+  &--visually-hidden
+    +visually-hidden.visually-hidden

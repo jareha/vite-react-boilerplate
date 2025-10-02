@@ -1,11 +1,17 @@
+# Artifacts
+*.d.ts
+*.tsbuildinfo
+.eslintcache
+build
+coverage
+dist
+
 # Dependencies
 node_modules
 
-# Build-generated
-build
-
-# Macintosh
+# Operating system-generated
+## Apple
 .DS_Store
 
-# Windows
+## Windows
 Thumbs.db

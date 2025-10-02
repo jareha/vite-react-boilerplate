@@ -1,0 +1,9 @@
+@use "../variables/colors"
+
+=focus
+  +reset-focus
+  border-radius: 5px
+
+  &:focus
+    box-shadow: inset 0 0 0 2px colors.$color--black, inset 0 0 0 3px colors.$color--white
+    outline: none

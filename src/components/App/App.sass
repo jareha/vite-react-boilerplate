@@ -1,0 +1,59 @@
+:root
+  --border--default: 1px solid #333333
+  --border--transparent: 1px solid transparent
+  --text: #111111
+  --transactions: rgb(210, 225, 241)
+
+/* Inter typeface, start */
+// Refer: https://rsms.me/inter/#features
+:root
+  font-family: "Inter", sans-serif
+  font-feature-settings: "calt" 1, "cv12" 1, "cv13" 1, "dlig" 1, "liga" 1, "ss01" 1, "ss02" 1, "ss03" 1, "zero" 1
+
+@supports (font-variation-settings: normal)
+  :root
+    font-family: "InterVariable", sans-serif
+
+/* Inter typeface, end */
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active
+  color: var(--text)
+
+a:hover
+  text-decoration: none
+
+body
+  color: var(--text)
+  padding: .5em .5em 2em
+
+@media ( min-width: 801px )
+  body
+    padding: 1em 1em 2em
+
+.screen-reader
+  clip: rect(1px, 1px, 1px, 1px)
+  clip-path: inset(50%)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+  width: 1px
+
+.desktop
+  display: none
+
+@media ( min-width: 801px )
+  .desktop
+    display: block
+
+  .mobile
+    display: none
+
+h1
+  font-size: 1.5em
+  margin-block-end: .5em
