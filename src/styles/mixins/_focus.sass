@@ -1,7 +1,7 @@
 @use "../variables/colors"
 
-=focus
-  +reset-focus
+@mixin focus
+  @include reset-focus
   border-radius: 5px
 
   &:focus
