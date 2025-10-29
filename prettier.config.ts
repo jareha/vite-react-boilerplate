@@ -11,10 +11,6 @@ const config = {
   semi: true,
   singleQuote: false,
   trailingComma: "all",
-  cssEnable: [
-    "css",
-    "sass",
-  ],
 };
 
 export default config;
